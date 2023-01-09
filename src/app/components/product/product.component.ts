@@ -13,6 +13,8 @@ export class ProductComponent implements OnInit {
   selectedProduct: string | undefined;
   newProduct: Product = new Product();
 
+  showTable: boolean = false;
+
   get jsonProduct() {
     return JSON.stringify(this.newProduct);
   }

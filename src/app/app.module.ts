@@ -7,6 +7,8 @@ import { ProductComponent } from './components/product/product.component';
 import { MlaoAttrDirective } from './directives/attr.directive';
 import { MlaoAttrDynamicDirective } from './directives/attr-dynamic.directive';
 import { TwowayDirective } from './directives/twoway.directive';
+import { StructureDirective } from './directives-structure/structure.directive';
+import { IteratorDirective } from './directives-structure/iterator.directive';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { TwowayDirective } from './directives/twoway.directive';
     MlaoAttrDirective,
     MlaoAttrDynamicDirective,
     TwowayDirective,
+    StructureDirective,
+    IteratorDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
