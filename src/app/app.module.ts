@@ -19,6 +19,7 @@ import { DiscountDisplayComponent } from './components/discount-display/discount
 import { DiscountEditorComponent } from './components/discount-editor/discount-editor.component';
 import { DiscountPipe } from './pipes/discount.pipe';
 import { SimpleDataSource } from './model/dataSource.model';
+import { Model } from './model/repository.model';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { SimpleDataSource } from './model/dataSource.model';
     DiscountPipe,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [DiscountService, SimpleDataSource],
+  providers: [DiscountService, SimpleDataSource, Model],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
