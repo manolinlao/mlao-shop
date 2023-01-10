@@ -1,6 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Product } from '../model/product.model';
 
+// PIPE IMPURO!!!! , por defecto son todos puros
+
 @Pipe({
   name: 'mlaoCategoryFilter',
   pure: false,

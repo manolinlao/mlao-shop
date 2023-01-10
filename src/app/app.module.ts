@@ -14,6 +14,10 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { ToggleViewComponent } from './components/toggle-view/toggle-view.component';
 import { MlaoAddTaxPipe } from './pipes/mlao-add-tax.pipe';
 import { MlaoCategoryFilterPipe } from './pipes/mlao-category-filter.pipe';
+import { DiscountService } from './services/discount.service';
+import { DiscountDisplayComponent } from './components/discount-display/discount-display.component';
+import { DiscountEditorComponent } from './components/discount-editor/discount-editor.component';
+import { DiscountPipe } from './pipes/discount.pipe';
 
 @NgModule({
   declarations: [
@@ -29,9 +33,12 @@ import { MlaoCategoryFilterPipe } from './pipes/mlao-category-filter.pipe';
     ToggleViewComponent,
     MlaoAddTaxPipe,
     MlaoCategoryFilterPipe,
+    DiscountDisplayComponent,
+    DiscountEditorComponent,
+    DiscountPipe,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [DiscountService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
