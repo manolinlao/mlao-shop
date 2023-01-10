@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Model } from 'src/app/model/repository.model';
 import { Product } from '../../model/product.model';
 
 @Component({
@@ -9,10 +10,13 @@ import { Product } from '../../model/product.model';
 export class ProductFormComponent {
   newProduct: Product = new Product();
 
-  @Output('mlaoNewProduct') newProductEvent = new EventEmitter<Product>();
+  constructor(private model: Model) {}
+
+  //@Output('mlaoNewProduct') newProductEvent = new EventEmitter<Product>();
 
   submitForm(form: any) {
-    this.newProductEvent.emit(this.newProduct);
+    //this.newProductEvent.emit(this.newProduct);
+    this.model.saveProduct(this.newProduct);
     this.newProduct = new Product();
     form.reset();
   }

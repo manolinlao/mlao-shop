@@ -7,10 +7,4 @@ import { Product } from '../../model/product.model';
   templateUrl: './principal.component.html',
   styleUrls: ['./principal.component.css'],
 })
-export class PrincipalComponent {
-  model: Model = new Model();
-
-  addProduct(product: Product) {
-    this.model.saveProduct(product);
-  }
-}
+export class PrincipalComponent {}

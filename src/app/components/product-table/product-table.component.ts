@@ -10,7 +10,9 @@ import { Model } from '../../model/repository.model';
 export class ProductTableComponent {
   taxRate: number = 0;
   categoryFilter: string | undefined = undefined;
-  @Input('model') dataModel: Model | undefined;
+  //@Input('model') dataModel: Model | undefined;
+
+  constructor(private dataModel: Model) {}
 
   getProduct(key: number): Product | undefined {
     return this.dataModel?.getProduct(key);
