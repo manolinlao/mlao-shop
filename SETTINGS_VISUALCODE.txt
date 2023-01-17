@@ -1,0 +1,82 @@
+{
+    "bracket-pair-colorizer-2.colors": [
+        "#fafafa",
+        "#9F51B6",
+        "#F7C244",
+        "#F07850",
+        "#9CDD29",
+        "#C497D4"
+    ],
+    "workbench.colorTheme": "Monokai Night",
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.format.enable": false,
+    "javascript.validate.enable": false,
+
+    "editor.tabSize": 2,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": false,
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.trailingComma": "none",
+    "prettier.bracesSpacing": true,
+    "prettier.bracketSpacing": true,
+    "prettier.breakProperty": true,
+    "prettier.arrowParens": true,
+    "prettier.semi": false,
+    "prettier.spaceBeforeFunctionParen": true,
+    "prettier.alignObjectProperties": false,
+
+    "todohighlight.keywords": [
+        "@NOTE",
+        "@TODO",
+        "@FIXME",
+        "@HACK",
+        "@UNDO",
+        "@BUG",
+        {
+            "text": "@NOTE",
+            "color": "#ff0000",
+            "backgroundColor": "yellow",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "@HACK",
+            "color": "#000",
+            "isWholeLine": false,
+        },
+        {
+            "text": "@TODO",
+            "color": "red",
+            "border": "1px solid red",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,0,.2)",
+        },
+        {
+            "text": "@FIXME",
+            "color": "red",
+            "border": "1px solid red",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,0,.2)",
+        }
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.autoSave": "afterDelay",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "mocha.files.glob": "test/**/*.spec.ts",
+
+    "mocha.requires": [
+
+        "ts-node/register"
+
+    ]
+
+    
+
+
+}
